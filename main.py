@@ -1,6 +1,7 @@
 from typing import List
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, HttpUrl
+from fastapi.middleware.cors import CORSMiddleware
 
 
 class QuestionData(BaseModel):
@@ -10,6 +11,21 @@ class QuestionData(BaseModel):
 
 
 app = FastAPI()
+
+
+origins = [
+    "http://localhost:8000",  # Adjust with your settings
+    "https://nfactorial-hackathon-1.onrender.com",
+    # You can add more origins if needed
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/questions/{category}", response_model=List[QuestionData])
