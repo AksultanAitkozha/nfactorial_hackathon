@@ -1,5 +1,5 @@
-from typing import List
-from fastapi import FastAPI, HTTPException
+from typing import List, Dict
+from fastapi import FastAPI
 from pydantic import BaseModel, HttpUrl
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -10,13 +10,16 @@ class QuestionData(BaseModel):
     answer: str
 
 
+class ResponseData(BaseModel):
+    data: Dict[str, List[QuestionData]]
+
+
 app = FastAPI()
 
 
 origins = [
-    "http://localhost:8000",  # Adjust with your settings
+    "http://localhost:8000",
     "https://nfactorial-hackathon-1.onrender.com",
-    # You can add more origins if needed
 ]
 
 app.add_middleware(
@@ -28,7 +31,7 @@ app.add_middleware(
 )
 
 
-@app.get("/questions/{category}", response_model=List[QuestionData])
+@app.get("/questions/{category}")
 async def get_questions(category: str):
     questions_data = {
         "timeline": [
@@ -41,7 +44,7 @@ async def get_questions(category: str):
                 "question": "твой любимый ментор?",
                 "image": "https://drive.google.com/file/d/1Jf6zcJUKKuum7_FBRctslKYOlw3H0Am5/view?usp=drive_link",
                 "answer": "optional"
-            }
+            },
         ],
         "random": [
             {
@@ -61,7 +64,5 @@ async def get_questions(category: str):
             }
         ]
     }
-    if category in questions_data:
-        return questions_data[category]
-    else:
-        raise HTTPException(status_code=404, detail="Category not found")
+    category_data = questions_data.get(category)
+    return {category: category_data}
