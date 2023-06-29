@@ -23,9 +23,9 @@ async def get_questions(category: str):
             },
             {
                 "question": "твой любимый ментор?",
-                "image": "",
+                "image": "https://drive.google.com/file/d/1Jf6zcJUKKuum7_FBRctslKYOlw3H0Am5/view?usp=drive_link",
                 "answer": "optional"
-            },          
+            }
         ],
         "random": [
             {
