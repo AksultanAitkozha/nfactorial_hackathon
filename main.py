@@ -37,8 +37,8 @@ async def get_questions(category: str):
         "timeline": [
             {
                 "question": "Кто ты, юный падаван: iOS или fullstack",
-                "image": "https://drive.google.com/file/d/1Jf6zcJUKKuum7_FBRctslKYOlw3H0Am5/view?usp=sharing",
-                "answer": "yes"
+                "image": "blue_red_pill",
+                "answer": "optional"
             },
             {
                 "question": "Твой любимый ментор?",
@@ -51,37 +51,87 @@ async def get_questions(category: str):
                 "answer": "yes"
             },
             {
-                "question": "Запитчил идею Арману?",
-                "image": "https://drive.google.com/file/d/1cEErufIAhYnr7bx0Mof_qmmCRfZg1AYe/view?usp=sharing",
+                "question": "Сделал больше трёх домашек по бэку?",
+                "image": "ali_tlek",
                 "answer": "yes"
             },
             {
-                "question": "шаришь за лангчейн? а за векторные базы данных? 🤔",
-                "image": "https://drive.google.com/file/d/15uy5T45Jkb5aEdodNeCUHIwzu4qgv8ZD/view?usp=sharing",
+                "question": "Шаришь за лангчейн? а за векторные базы данных? 🤔",
+                "image": "doge",
                 "answer": "yes"
-            }
+            },
+            {
+                "question": "Не пропустил ни одну лекцию?",
+                "image": "full_attendance",
+                "answer": "yes"
+            },
+            {
+                "question": "Знаком с каждым ментором?",
+                "image": "gustavo_fring",
+                "answer": "yes"
+            },
+            {
+                "question": "Показал MVP?",
+                "image": "gustavo_fring",
+                "answer": "yes"
+            },
+            {
+                "question": "любишь проект, который ты делаешь?",
+                "image": "gustavo_fring",
+                "answer": "yes"
+            },
+            {
+                "question": "Знаешь, как набрать первые 5к юзеров?",
+                "image": "popular",
+                "answer": "yes"
+            },
+            {
+                "question": "За AI будущее! согласен?",
+                "image": "future",
+                "answer": "yes"
+            },
+            {
+                "question": "го делать KazakhGPT? just for fun :)",
+                "image": "kazakh",
+                "answer": "yes"
+            },
         ],
         "random": [
             {
                 "question": "Спал на лекции?",
-                "image": "https://drive.google.com/file/d/1h_hg0D8vxNd23iWSqXayIp2OaGPOfXAo/view?usp=sharing",
+                "image": "sleepy_kasym",
                 "answer": "noR"
             },
             {
-                "question": "Вжжж... на вас напал клоп!",
-                "image": "https://drive.google.com/file/d/1u5jDh-iy_uhyJaaUwAgu-kdPqgcBWlk3/view?usp=sharing",
+                "question": "Вжжж... на нас напал клоп!",
+                "image": "cockroach",
                 "answer": "yesR"
             },
             {
                 "question": "Кто из них Оссейн?",
-                "image": "https://drive.google.com/file/d/1zQyI0yZFKhKivmKd8NS_u9xU5IGd50KF/view?usp=sharing",
+                "image": "imgonline-com-ua-twotoone-L8LnrnsCBzlS3(1)",
                 "answer": "yesR"
             },
             {
-                "question": "Кто разрабатывает ImamAI?",
-                "image": "https://drive.google.com/file/d/12jZkIsg0mSpZCHDOxH29ksit7ljGfK5i/view?usp=sharing",
-                "answer": "ArthurR"
-            }
+                "question": "кто разрабатывает ImamAI? первое демо, как никак",
+                "image": "arthur_ossein",
+                "answer": "noR"
+            },
+            {
+                "question": "Ставил балапашку, чтобы получить ваучер?",
+                "image": "balapan",
+                "answer": "yesR"
+            },
+            {
+                "question": "НУшников много! заметил?",
+                "image": "nu_uni",
+                "answer": "yesR"
+            },
+            {
+                "question": "многих запомнил после спид дейтинга?",
+                "image": "date",
+                "answer": "yesR"
+            },
         ]
     }
     category_data = questions_data.get(category)
