@@ -42,12 +42,12 @@ async def get_questions(category: str):
             },
             {
                 "question": "Твой любимый ментор?",
-                "image": "https://drive.google.com/file/d/1pn6PVxh9IFpee38ip3N5y3FnfbiRCZ1a/view?usp=sharing",
+                "image": "mentors",
                 "answer": "optional"
             },
             {
                 "question": "Запитчил идею Арману?",
-                "image": "https://drive.google.com/file/d/1cEErufIAhYnr7bx0Mof_qmmCRfZg1AYe/view?usp=sharing",
+                "image": "arman_su",
                 "answer": "yes"
             },
             {
@@ -67,7 +67,7 @@ async def get_questions(category: str):
             },
             {
                 "question": "Знаком с каждым ментором?",
-                "image": "gustavo_fring",
+                "image": "office",
                 "answer": "yes"
             },
             {
@@ -76,13 +76,18 @@ async def get_questions(category: str):
                 "answer": "yes"
             },
             {
-                "question": "любишь проект, который ты делаешь?",
-                "image": "gustavo_fring",
+                "question": "Любишь проект, который ты делаешь?",
+                "image": "love",
                 "answer": "yes"
             },
             {
                 "question": "Знаешь, как набрать первые 5к юзеров?",
                 "image": "popular",
+                "answer": "yes"
+            },
+            {
+                "question": "Можешь назвать себя промпт инженером?",
+                "image": "prompt_eng",
                 "answer": "yes"
             },
             {
@@ -108,12 +113,12 @@ async def get_questions(category: str):
                 "answer": "yesR"
             },
             {
-                "question": "Кто из них Оссейн?",
+                "question": "Оссейн справа???",
                 "image": "imgonline-com-ua-twotoone-L8LnrnsCBzlS3(1)",
                 "answer": "yesR"
             },
             {
-                "question": "кто разрабатывает ImamAI? первое демо, как никак",
+                "question": "ImamAI разрабатывает Артур?",
                 "image": "arthur_ossein",
                 "answer": "noR"
             },
@@ -123,13 +128,33 @@ async def get_questions(category: str):
                 "answer": "yesR"
             },
             {
-                "question": "НУшников много! заметил?",
+                "question": "НУшников много! заметил? NUfactorial прям :)",
                 "image": "nu_uni",
                 "answer": "yesR"
             },
             {
-                "question": "многих запомнил после спид дейтинга?",
+                "question": "Многих запомнил после спид дейтинга?",
                 "image": "date",
+                "answer": "yesR"
+            },
+            {
+                "question": "Поднялся по ступеням до Горельников без одышки?",
+                "image": "mountains",
+                "answer": "yesR"
+            },
+            {
+                "question": "Играл в мафию в читалке?",
+                "image": "mafia",
+                "answer": "yesR"
+            },
+            {
+                "question": "Сфоткался с Ерсултаном?",
+                "image": "ersultan",
+                "answer": "yesR"
+            },
+            {
+                "question": "Dalida is the Queen?",
+                "image": "dalida",
                 "answer": "yesR"
             },
         ]
