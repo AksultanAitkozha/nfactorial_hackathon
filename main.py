@@ -41,9 +41,9 @@ async def get_questions(category: str):
                 "answer": "optional"
             },
             {
-                "question": "Твой любимый ментор?",
+                "question": "Есть любимый ментор?",
                 "image": "mentors",
-                "answer": "optional"
+                "answer": "yes"
             },
             {
                 "question": "Запитчил идею Арману?",
