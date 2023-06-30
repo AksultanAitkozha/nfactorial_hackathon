@@ -56,7 +56,7 @@ async def get_questions(category: str):
                 "answer": "yes"
             },
             {
-                "question": "Шаришь за лангчейн? а за векторные базы данных? 🤔",
+                "question": "Шаришь за лангчейн? 🤔",
                 "image": "doge",
                 "answer": "yes"
             },
@@ -67,7 +67,7 @@ async def get_questions(category: str):
             },
             {
                 "question": "Знаком с каждым ментором?",
-                "image": "office",
+                "image": "mentors",
                 "answer": "yes"
             },
             {
@@ -113,8 +113,8 @@ async def get_questions(category: str):
                 "answer": "yesR"
             },
             {
-                "question": "Оссейн справа???",
-                "image": "imgonline-com-ua-twotoone-L8LnrnsCBzlS3(1)",
+                "question": "С длинными волосами лучше?",
+                "image": "ossein",
                 "answer": "yesR"
             },
             {
@@ -129,7 +129,7 @@ async def get_questions(category: str):
             },
             {
                 "question": "НУшников много! заметил? NUfactorial прям :)",
-                "image": "nu_uni",
+                "image": "nu",
                 "answer": "yesR"
             },
             {
@@ -139,7 +139,7 @@ async def get_questions(category: str):
             },
             {
                 "question": "Поднялся по ступеням до Горельников без одышки?",
-                "image": "mountains",
+                "image": "gorelnik",
                 "answer": "yesR"
             },
             {
@@ -149,7 +149,7 @@ async def get_questions(category: str):
             },
             {
                 "question": "Сфоткался с Ерсултаном?",
-                "image": "ersultan",
+                "image": "office",
                 "answer": "yesR"
             },
             {
